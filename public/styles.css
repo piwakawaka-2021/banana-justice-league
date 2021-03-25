@@ -1,6 +1,6 @@
 
 html,
-.wrapper  {
+.wrapper {
   background-color: yellow;
   display: flex;
   height: 100%;
@@ -15,6 +15,7 @@ html,
   margin: auto;
   width: 50%;
 }
+
 
 .input-words {
   border-bottom: .1rem solid yellow;
