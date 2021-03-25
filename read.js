@@ -2,24 +2,24 @@ const fs = require("fs");
 
 
 function read (filepath, res, req, callback) {
-    // fs.readFile(filepath, (err, data) => { 
-    //     if (err) callback(err);
+    fs.readFile(filepath, (err, data) => { 
+        if (err) callback(err);
 
-    //     else callback(err, res, req, data)
+        else callback(err, res, req, data)
 
-    // })
+    })
 }
 
-// function renderHome(err, res, req, data) {
-//     if (err) console.log(err)
+function renderHome(err, res, req, data) {
+    if (err) console.log(err)
 
-//     const viewData = {
-//         pageClass: " home",
-//         puppies: JSON.parse(data).puppies,
-//     };
+    const viewData = {
+        pageClass: " home",
+        // puppies: JSON.parse(data),
+    };
 
-//     res.render("home", viewData)
-// }
+    res.render("home", viewData)
+}
 
 // function renderProfile(err, res, req, data) {
 //     if (err) console.log(err)
@@ -38,6 +38,6 @@ function read (filepath, res, req, callback) {
 
 module.exports = {
     read,
-    // renderHome,
+    renderHome,
     // renderProfile
 }

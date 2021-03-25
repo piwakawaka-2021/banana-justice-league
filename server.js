@@ -1,5 +1,4 @@
 
-const { CLIEngine } = require('eslint')
 const { json } = require('express')
 const express = require('express')
 const hbs = require('express-handlebars')
@@ -18,6 +17,6 @@ server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
 // Your routes/router(s) should go here
-server.use('/puppies', bananaRoutes)
+server.use('/', bananaRoutes)
 
 module.exports = server
