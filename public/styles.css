@@ -16,4 +16,9 @@ body {
   width: 50%;
 }
 
+.input-words {
+  border-bottom: .1rem solid yellow;
+  box-shadow: 0 -.4rem 0 yellow inset;
+}
+
 @import "../node_modules/bulma/css/bulma.css";
