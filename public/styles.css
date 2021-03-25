@@ -1,6 +1,6 @@
 
 html,
-body {
+.wrapper  {
   background-color: yellow;
   display: flex;
   height: 100%;
