@@ -17,27 +17,26 @@ function renderHome(err, res, req, data) {
         pageClass: " home",
         // puppies: JSON.parse(data),
     };
-
     res.render("home", viewData)
 }
 
-// function renderProfile(err, res, req, data) {
-//     if (err) console.log(err)
-//     else {res.render('details', getPupFromID(data, req))}
-// }
+function renderForm(err, res, req, data) {
+    if (err) console.log(err)
+    else {res.render('form', data)}
+}
 
-// function getPupFromID (data, req){
-//     const paramID = req.params.id;
-//     const pd = JSON.parse(data);
-//     const puppyArr = pd.puppies;
-//     const puppy = puppyArr.find((puppy) => puppy.id == paramID);
+function renderStory(err, res, req, data) {
+    if (err) console.log(err)
+    else {res.render('story', data)}
+}
 
-//     return puppy
-// }
+
+
 
 
 module.exports = {
     read,
     renderHome,
-    // renderProfile
+    renderForm,
+    renderStory
 }
