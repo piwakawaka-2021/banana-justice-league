@@ -1,0 +1,19 @@
+
+html,
+body {
+  background-color: yellow;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+@import "../node_modules/bulma/css/bulma.css";
