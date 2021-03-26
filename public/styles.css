@@ -65,4 +65,38 @@ p {
   margin-top: 69px;
 }
 
+.header-banner {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+}
 
+.hero-div {
+  margin-top: 11vw;
+}
+
+.header-text {
+  font-family: 'Oswald', 'sans-serif' ;
+  font-size: 9rem !important;
+  color: black;
+  text-align: center;
+}
+
+.sub-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.bottom-content {
+  justify-content: center;
+  text-align: center;
+}
+
+
+.button-custom {
+  margin: 3vw;
+
+}
