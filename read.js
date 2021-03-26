@@ -47,6 +47,7 @@ function renderStory(err, res, req, data) {
     }
 }
 
+
 module.exports = {
     read,
     renderHome,

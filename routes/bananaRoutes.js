@@ -18,6 +18,8 @@ router.post("/story", (req, res) => {
 });
 
 
+//POST ROUTE
+//edits data file and displays new pup info when you click submit
 
 
 module.exports = router;

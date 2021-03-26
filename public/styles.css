@@ -1,4 +1,9 @@
 
+/* body font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* font rule = font-family: 'Roboto Mono', monospace; */
+
 html,
 .wrapper  {
   background-color: yellow;
@@ -9,15 +14,33 @@ html,
   justify-content: center;
 }
 
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
 .center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: auto;
   width: 50%;
 }
 
-.input-words {
-  border-bottom: .1rem solid yellow;
-  box-shadow: 0 -.4rem 0 yellow inset;
+.container {
+  background-color: white;
+  padding: 50px
 }
+
+.hero {
+  background-color: hsl(60, 100%, 50%);
+}
+
+.section-of-text {
+  margin: 20px;
+  padding: 20px;
+  background-color: hsl(60, 100%, 90%);
+
+}
+
 
