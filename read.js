@@ -23,9 +23,17 @@ function renderForm(err, res, req, data) {
 }
 
 function renderStory(err, res, req, data) {
-    if (err) console.log(err)
-    else {res.render('story', data)}
+    if (err) {
+        console.log(err)
+    } else {
+        fs.readFile('./data.json', 'utf-8', (err, data) => {
+            res.render('story', JSON.parse(data))
+        })
+    
+    }
+
 }
+
 
 module.exports = {
     read,

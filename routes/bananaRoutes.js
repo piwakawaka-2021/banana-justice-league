@@ -13,11 +13,16 @@ router.get("/form", (req, res) => {
     read.read("./data.json", res, req, read.renderForm)
 });
 
-router.get("/story", (req, res) => {
-    read.read("./data.json", res, req, read.renderStory)
-});
 
 
+//POST ROUTE
+//edits data file and displays new pup info when you click submit
+router.post('/story', (req, res) => {
+
+    upDatePupPage(pupId, req, (puppyObject) => {
+        res.render('./details', puppyObject)
+    })
+})
 
 
 module.exports = router;
