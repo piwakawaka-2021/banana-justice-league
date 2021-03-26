@@ -5,7 +5,7 @@
 /* font rule = font-family: 'Roboto Mono', monospace; */
 
 html,
-body {
+.wrapper  {
   background-color: yellow;
   display: flex;
   height: 100%;
@@ -24,5 +24,10 @@ p {
   justify-content: center;
   margin: auto;
   width: 50%;
+}
+
+.input-words {
+  border-bottom: .1rem solid yellow;
+  box-shadow: 0 -.4rem 0 yellow inset;
 }
 
