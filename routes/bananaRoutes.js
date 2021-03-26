@@ -13,7 +13,7 @@ router.get("/form", (req, res) => {
     read.read("./data.json", res, req, read.renderForm)
 });
 
-router.get("/story", (req, res) => {
+router.post("/story", (req, res) => {
     read.read("./data.json", res, req, read.renderStory)
 });
 
