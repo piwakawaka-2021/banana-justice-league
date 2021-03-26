@@ -6,16 +6,24 @@
 
 html,
 .wrapper  {
+
   background-color: yellow;
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 p {
   font-family: 'Roboto Mono', monospace;
+  color: black;
 }
 
 
@@ -29,7 +37,7 @@ p {
 
 .container {
   background-color: white;
-  padding: 50px
+  padding: 50px;
 }
 
 .hero {
@@ -41,6 +49,20 @@ p {
   padding: 20px;
   background-color: hsl(60, 100%, 90%);
 
+}
+
+.heading {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spacing {
+  margin: 7px;
+}
+
+.margin {
+  margin-top: 69px;
 }
 
 .header-banner {
