@@ -20,5 +20,6 @@ server.set('view engine', 'hbs')
 server.use('/', bananaRoutes)
 server.use('/form', bananaRoutes)
 server.use('/story', bananaRoutes)
+server.use('/sebsView', bananaRoutes)
 
 module.exports = server

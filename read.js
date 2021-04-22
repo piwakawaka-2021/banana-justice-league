@@ -48,10 +48,24 @@ function renderStory(err, res, req, data) {
     }
 }
 
+function renderSebsView(err, res, req, data) {
+    if (err) console.log(err)
+    else {
+        const obj = JSON.parse(data)
+
+        obj.adjective1 = "Delightful"
+
+        const newData = JSON.stringify(obj)
+
+        res.render('sebsView', obj)
+    }
+}
+
 
 module.exports = {
     read,
     renderHome,
     renderForm,
-    renderStory
+    renderStory,
+    renderSebsView
 }

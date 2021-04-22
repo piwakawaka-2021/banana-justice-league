@@ -17,6 +17,9 @@ router.post("/story", (req, res) => {
     read.read("./data.json", res, req, read.renderStory)
 });
 
+router.get('/sebsview', (req, res) => {
+    read.read('./data.json', res, req, read.renderSebsView)
+})
 
 //POST ROUTE
 //edits data file and displays new pup info when you click submit
